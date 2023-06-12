@@ -1,0 +1,106 @@
+body{
+  font-family: 'Mukta Malar', sans-serif;
+  background-color: rgb(250, 247, 250);
+}
+html{
+  scroll-behavior: smooth;
+}
+nav{
+    font-size: 20px;
+}
+nav li{
+    margin-right: 30px;
+}
+.nav-item a{
+  transition: all .3s ease;
+}
+.nav-item a:hover{
+  background-color: #a497e4;
+  box-shadow: 0 0 10px #8e7ee0;
+  border-radius: 5px;
+}
+nav h3{
+  position: relative;
+  -webkit-text-stroke: 0.1px rgb(222, 219, 219);
+  color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+nav h3::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: black;
+  -webkit-text-stroke: 0px black;
+  border-width: 2px solid black;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate{
+  0%{
+    width: 0;
+  }
+  70%{
+    width: 100%;
+  }
+}
+img{
+  width: 400px;
+}
+.bg-blue {
+  background-color: #5d8a9a;
+}
+.bg-lightgrey {
+  background-color: #eeecec;
+}
+.bg-grey {
+  background-color: #b1a8de;
+}
+.text-purple{
+  color: #6c55e1;
+}
+.text-darkpurple{
+  color: #4e3bad;
+}
+.bg-purple{
+  background-color: #c4baf7;
+}
+.bg-darkpurple{
+  background-color: #6c55e1;
+}
+.bg-yellow{
+  background-color: rgb(234, 230, 113);
+}
+.col-2 {
+  height: 10px;
+  margin-top: 80px;
+}
+.socials a{
+  transition: transform .2s;
+}
+.socials a i:hover{
+  transform: scale(1.4);
+}
+.img img{
+  height: 100px;
+  width: 100px;
+}
+.down{
+  margin-top: 150px;
+  font-size: 23px;
+}
+.box{
+  background: linear-gradient(to top, #805cdd 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all .8s;
+  border-radius: 20px;
+}
+.box:hover{
+  background-position: left bottom;
+  color: white;
+  border: none;
+  box-shadow:0 0 20px rgb(130, 9, 194) ;
+}
